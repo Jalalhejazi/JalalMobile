@@ -34,7 +34,7 @@
         <ObjectGroup Name="DefaultConnection-Deployment" Order="1">
           <Destination Path="" />
           <Object Type="DbFullSql">
-            <PreSource Path="Data Source=%28LocalDb%29\v11.0%3bAttachDbFilename=|DataDirectory|\aspnet-JalalMobile-20120905130442.mdf%3bInitial Catalog=aspnet-JalalMobile-20120905130442%3bIntegrated Security=True" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <PreSource Path="Data Source=%28LocalDb%29\v11.0%3bInitial Catalog=aspnet-JalalMobile-20120905130442%3bIntegrated Security=SSPI%3bAttachDBFilename=|DataDirectory|\aspnet-JalalMobile-20120905130442.mdf" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
             <Source Path="obj\Debug\AutoScripts\DefaultConnection-Deployment_SchemaAndData.sql" Transacted="True" />
           </Object>
         </ObjectGroup>
@@ -48,6 +48,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
