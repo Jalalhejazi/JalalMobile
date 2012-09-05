@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>Contact</h2>
+<h3>Email</h3>
+<span><a href="mailto:jalal.hejazi@gmail.com">jala.hejazi@gmail.com</a></span>
+<p>This section contains form fields for number, email, URL, and tel. with RegularExpressions </p>
+
+<form action="#" method="get">
+    <p><label>Number with format-validation :-)</label><input name="Num1" type="number" min="1" max="999" placeholder="required: NumberID ###" title="" pattern="(\d{3})" /></p>
+    <p><input name="Email1" type="email"  placeholder="required: Email" required title="Company email" /></p>
+    <p><input name="URL1" type="url" placeholder="www"  title="Company Site"  /></p>
+    <p><input name="tel1" type="tel"  placeholder="sms"/></p>
+    <p><input type="submit" value="SEND" /></p>
+</form>
+
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Navigation</li>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("About", "About", "Home")</li>
+</ul>

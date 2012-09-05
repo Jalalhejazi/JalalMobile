@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Jalal Mobile";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<div data-role="content">
+				<ul data-role="listview" data-inset="true" data-theme="a">
+					<li>@Html.ActionLink("About", "About", "Home") </li>
+					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+				</ul>
+
+				
+				<ul data-role="listview" data-inset="true" data-theme="d" >
+					<li data-icon="star" ><a href="#">favorite</a> </li>
+					<li data-icon="search" data-theme="b"  ><a href="#">Search</a> </li>
+				</ul>
+
+		<ul data-role="listview" data-inset="true">
+			<li data-icon="star" data-theme="e"><a href="http://html5webapps.azurewebsites.net/">Inbox <span class="ui-li-count red" >12</span></a></li>
+			<li><a href="#">Outbox <span class="ui-li-count">0</span></a></li>
+			<li><a href="#">Drafts <span class="ui-li-count">4</span></a></li>
+			<li><a href="#">Sent <span class="ui-li-count">328</span></a></li>
+			<li><a href="#">Trash <span class="ui-li-count">62</span></a></li>
+		</ul>
+
+			</div>
